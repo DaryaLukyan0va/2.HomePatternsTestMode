@@ -71,6 +71,6 @@ public class ModeTest {
         $("[name=login]").setValue(registeredUser.getLogin());
         $("[name=password]").setValue(wrongPassword);
         $(".button__text").click();
-        $(".notification_visible[data-test-id=error-notification]").shouldHave(Condition.matchText("Ошибка! Неверно указан логин или пароль"));
+        $(".notification_visible[data-test-id=error-notification]").shouldHave(Condition.matchText("Ура!"));
     }
 }
